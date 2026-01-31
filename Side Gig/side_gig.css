@@ -1,0 +1,10 @@
+html {
+    background-color: red;
+}
+
+body {
+    background-color: red;
+    color: white; /* Makes text readable on black */
+    margin: 0;
+    padding: 0;
+}
