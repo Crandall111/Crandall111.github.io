@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Contact</h1>
+        <nav style="text-align: center;">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="display: inline-block; margin: 0 10px;"><a href="MySite.html">Home</a></li>
+                <li style="display: inline-block; margin: 0 10px;"><a href="born.html">Born</a></li>
+                <li style="display: inline-block; margin: 0 10px;"><a href="passion.html">Passion</a></li>
+                <li style="display: inline-block; margin: 0 10px;"><a href="goals.html">Goals</a></li>
+                <li style="display: inline-block; margin: 0 10px;"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p>
+        Feel free to contact me I would love to here from you!
+    </p>
+    <div>
+        <form action="contact_form.php" method="post">
+            <!-- input for the users name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name:" required>
+        </form>
+    </div>
+    <div>
+        <p>
+            <label for="emailAddr">Email address:</label>
+            <!-- TODO: Add regular expression to pattern -->
+            <input type="email" id="emailAddr" name="emailAddr" pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" placeholder="name@domain.com">
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="dateToContact">Date contact:</label>
+            <input type="date" id="dateToContact" name="dateToContact" required>
+        </p>
+    </div>
+    <div>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" placeholder="Your message:" rows="3" cols="50"></textarea>
+    </div>
+    <p>
+        <input type="submit" value="Submit">
+    </p>
+</body>
+</html>
