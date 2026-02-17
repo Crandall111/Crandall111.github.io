@@ -1,0 +1,21 @@
+div {
+    border: 5px, dotted, blue;
+    height: 50px;
+    width: 50px;
+    margin: ;
+}
+div {
+    border: 10px solid hotpink;
+    height: 250;
+    width: 250;
+}
+.box {
+    border: 5px, solid, red;
+    height: 100px;
+    width: 100px;
+}
+#box2 {
+    border: 5px, dashed, green;
+    height: 200px;
+    width: 200px;
+}
