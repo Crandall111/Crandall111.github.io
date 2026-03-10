@@ -1,0 +1,19 @@
+table {
+    width: 50%;
+    border: 5px solid green;
+    table-layout: fixed;
+    
+}
+
+td {
+    width: 300px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+table img {
+    border: 5px solid black;
+    display: flex;
+    width: 250px;
+    height: 150px;
+}
