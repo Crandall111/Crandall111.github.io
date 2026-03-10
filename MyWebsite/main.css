@@ -1,5 +1,8 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    /*
+        this sets the font and the background for the entire page.
+    */
+    font-family: 'Times New Roman', Times, serif; 
     background: linear-gradient(to bottom, 
     blue,lightblue 25%, 
     lightblue 75%, blue);
@@ -7,46 +10,46 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: blue;
-    color: white;
-    border: 5px solid #000;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px;
+    justify-content: space-between; /*How you push the content to opposite ends*/
+    align-items: center; /*Alignment up and down*/
+    background-color: blue; /*Sets the background color of the header*/
+    color: white; /*Makes the text white*/
+    border: 5px solid black;/*Puts a 5px size solid border of color around the header*/
+    border-radius: 12px; /*Creates the round edges around the border*/
+    box-shadow: 0 6px 18px; /*creates the shadow around the object*/
 }
 
 header nav a {
-    color: white;
-    padding: 5px;
+    color: white; /*Sets the text color*/
+    padding: 5px; /*Puts a space all around*/
 }
 
 header nav a:hover {
-    background-color: black;
-    border-radius: 12px;
+    background-color: black;/*Color that appears when you hover over the link*/
+    border-radius: 12px; /*creates the round edges*/
 }
 
 header .title {
-    font-size: 150%;
-    font-style: italic;
-    font-weight: bold;
-    padding: 1em;
+    font-size: 150%; /*Makes the font 150% bigger than normal*/
+    font-style: italic; /*Italicises the font*/
+    font-weight: bold; /*Makes the font bold*/
+    padding: 25px; /*Puts a space all around*/
 }
 
 .myself {
-    text-align: center;
+    text-align: center; /*Centers all the elements inside the class*/
 }
 
 .myself h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: black;
+    font-size: 2rem; /*Based on root font size 2rem = 32px*/
+    margin-bottom: 10px; /*Creates a gap on the bottom of the header*/
+    color: black; /*Mkaes the text black*/
 }
 
 .img img {
     text-align: center;
-    margin: auto;
-    width: 15%;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px;
+    margin: auto; /*auto does space on the left and right*/
+    width: 15%; /*15% of the size of the picture*/
+    border-radius: 12px; /*creates round edges*/
+    box-shadow: 0 6px 18px; /*creates the shadow*/
 }

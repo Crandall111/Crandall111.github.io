@@ -33,47 +33,47 @@ header .title {
 }
 
 .cards {
-    background-color: black;
-    border-radius: 12px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 6px 18px;
+    background-color: black; /*creates the background color*/
+    border-radius: 12px; /*creates round edges*/
+    padding: 20px; /*creates space all around the text*/
+    text-align: center; /*centers it */
+    box-shadow: 0 6px 18px; /*creates the shadows*/
 }
 
 .media {
-    margin-bottom: 20px;
+    margin-bottom: 20px;/*creates the space at the bottom*/
 }
 
 .media iframe {
-    width: 500px;
-    height: 250px;
-    border-radius: 12px;
-    border: 5px solid black;
-    box-shadow: 0 6px 18px;
+    width: 500px; /*Width of the video*/
+    height: 250px; /*height of the video*/
+    border-radius: 12px; /*Creates the round edges*/
+    border: 5px solid black; /*creates the black border around the video*/
+    box-shadow: 0 6px 18px; /*creates the shadow*/
 }
 
 .media img {
-    width: 10%;
-    border-radius: 12px;
-    border: 5px solid black;
-    box-shadow: 0 6px 18px;
+    width: 10%; /*10% size of the img*/
+    border-radius: 12px; /*Creates the round edges*/
+    border: 5px solid black; /*creates the black border around the img*/
+    box-shadow: 0 6px 18px; /*creates the shadow*/
 }
 
 .card h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 2rem; /*font size of h2 32px*/
+    margin-bottom: 10px; /*creating space at the bottom*/
 }
 
 .card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+    font-size: 1.5rem; /*font size of h3 24px*/
+    margin-bottom: 15px; /*creating space at the bottom*/
 }
 
 .card p {
-    font-size: 1rem;
-    color: black;
+    font-size: 1rem; /*font size of p 16px*/
+    color: black; /*Makes the text black*/
 }
 
 .card1 {
-    color: white;
+    color: white; /*Makes the text white*/
 }

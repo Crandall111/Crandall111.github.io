@@ -34,35 +34,34 @@ header .title {
 }
 
 .contact {
-    text-align: center;
-    padding: 50px;
+    text-align: center; /*centers everything inside the class*/
+    padding: 50px; /*gives the padding between header and the class */
 }
 
 form {
-    max-width: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    max-width: 400px; /*max width of the name and email inputs*/
+    margin: auto; /*makes left and right space the same*/
+    display: flex; /*creates flexbox container*/
+    flex-direction: column; /*stacks everything vertically*/
+    gap: 15px; /*gap between each textbox*/
     
 }
 
 input, textarea {
-    padding: 10px;
-    border-radius: 10px;
-    border: 5px solid darkblue;
-    box-shadow: 0 6px 18px;
+    padding: 10px; /*adds padding around the placeholder*/
+    border-radius: 12px; /*creates the round edges*/
+    border: 5px solid darkblue; /*creates the border around input boxes*/
+    box-shadow: 0 6px 18px; /*creates the shadow*/
 }
 
 button {
-    padding: 10px;
-    background: blue;
-    color: black;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 6px 18px;
+    padding: 10px; /*creates space around Send Message*/
+    background: blue; /*creates the color of the button*/
+    color: black; /*texte color*/
+    border-radius: 10px; /*creates the round edges*/
+    box-shadow: 0 6px 18px;/*creates the shadow*/
 }
 
 button:hover {
-    background: blue;
+    background: white; /*glows white when you hover over it*/
 }
