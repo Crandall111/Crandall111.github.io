@@ -1,40 +1,49 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background: radial-gradient(circle at center, 
-    blue,lightblue 25%, 
-    lightblue 75%, blue);
+    /*
+        this sets the font and the background for the entire page.
+    */ 
+    /*make the nave and the name a little bigger*/
+    margin: 0;
+    background: url("./Pictures/background (2).jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 110%;  
 }
 
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: blue;
-    color: white;
-    border: 5px solid #000;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px;
+    justify-content: space-between; /*How you push the content to opposite ends*/
+    align-items: center; /*Alignment up and down*/
+    background-color: #ffffff; /*Sets the background color of the header*/
+    color: black; /*Makes the text white*/
 }
 
 header nav a {
-    color: white;
-    padding: 5px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+    color: black; /*Sets the text color*/
+    font-size: 1.5rem;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px; /*Puts a space all around*/
 }
 
 header nav a:hover {
-    background-color: black;
-    border-radius: 12px; 
+    transform: scale(1.2);
 }
 
 header .title {
-    font-size: 150%;
-    font-style: italic;
-    font-weight: bold;
-    padding: 1em;
+    max-width: 110%;
+    font-size: 2.5rem; /*Makes the font 150% bigger than normal*/
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic; /*Italicises the font*/
+    font-weight: bold; /*Makes the font bold*/
+    padding: 25px; /*Puts a space all around*/
 }
 
 .contact {
     text-align: center; /*centers everything inside the class*/
+    color: white;
+    font-size: 1.5rem;
     padding: 50px; /*gives the padding between header and the class */
 }
 
@@ -50,18 +59,46 @@ form {
 input, textarea {
     padding: 10px; /*adds padding around the placeholder*/
     border-radius: 12px; /*creates the round edges*/
-    border: 5px solid darkblue; /*creates the border around input boxes*/
+    border: 5px solid black; /*creates the border around input boxes*/
     box-shadow: 0 6px 18px; /*creates the shadow*/
 }
 
 button {
     padding: 10px; /*creates space around Send Message*/
-    background: blue; /*creates the color of the button*/
+    background: white; /*creates the color of the button*/
+    border: 5px solid black;
+    font-size: 1rem;
     color: black; /*texte color*/
     border-radius: 10px; /*creates the round edges*/
     box-shadow: 0 6px 18px;/*creates the shadow*/
 }
 
 button:hover {
-    background: white; /*glows white when you hover over it*/
+    background: red; /*glows white when you hover over it*/
+}
+
+@media (max-width: 450px){
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header .title {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    header nav a {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
 }
