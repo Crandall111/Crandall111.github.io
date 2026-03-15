@@ -23,7 +23,7 @@ header nav a {
     transition: transform 0.2s ease;
     color: black; /*Sets the text color*/
     font-size: 1.5rem;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px; /*Puts a space all around*/
 }
 
@@ -34,18 +34,26 @@ header nav a:hover {
 header .title {
     max-width: 110%;
     font-size: 2.5rem; /*Makes the font 150% bigger than normal*/
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic; /*Italicises the font*/
     font-weight: bold; /*Makes the font bold*/
     padding: 25px; /*Puts a space all around*/
 }
 
-.cards {
-    background-color: black; /*creates the background color*/
-    border-radius: 12px; /*creates round edges*/
-    padding: 20px; /*creates space all around the text*/
-    text-align: center; /*centers it */
-    box-shadow: 0 6px 18px; /*creates the shadows*/
+.intro {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
 }
 
 .media {
@@ -53,37 +61,43 @@ header .title {
 }
 
 .media iframe {
-    width: 500px; /*Width of the video*/
-    height: 250px; /*height of the video*/
-    border-radius: 12px; /*Creates the round edges*/
-    border: 5px solid black; /*creates the black border around the video*/
-    box-shadow: 0 6px 18px; /*creates the shadow*/
+    width: 75%; /*Width of the video*/
+    height: 220px;
+    border-radius: 10px; /*Creates the round edges*/
 }
 
 .media img {
-    width: 10%; /*10% size of the img*/
-    border-radius: 12px; /*Creates the round edges*/
-    border: 5px solid black; /*creates the black border around the img*/
-    box-shadow: 0 6px 18px; /*creates the shadow*/
+    width: 25%; /*10% size of the img*/
+    height: 350px;
+    border-radius: 10px; /*Creates the round edges*/
 }
 
-.card h2 {
-    font-size: 2rem; /*font size of h2 32px*/
-    margin-bottom: 10px; /*creating space at the bottom*/
-}
 
-.card h3 {
-    font-size: 1.5rem; /*font size of h3 24px*/
-    margin-bottom: 15px; /*creating space at the bottom*/
-}
+.card {
+    background: lightblue;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 18px;
 
-.card p {
-    font-size: 1rem; /*font size of p 16px*/
-    color: black; /*Makes the text black*/
-}
+    h2 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 2rem; /*font size of h2 32px*/
+        margin-bottom: -20px; /*creating space at the bottom*/
+        color: black;
+    }
 
-.card1 {
-    color: white; /*Makes the text white*/
+    h3 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.5rem; /*font size of h3 24px*/
+        margin-bottom: 15px; /*creating space at the bottom*/
+        color: black;
+    }
+
+    p {
+        font-size: 1.2rem; /*font size of p 16px*/
+        color: black; /*Makes the text black*/
+    }
 }
 
 @media (max-width: 450px){
@@ -109,5 +123,13 @@ header .title {
     header nav a {
         font-size: 1.2rem;
         padding: 10px;
+    }
+
+    .media img {
+        width: 50%;
+    }
+
+    .media iframe {
+        width: 50%;
     }
 }
