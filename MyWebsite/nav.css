@@ -1,0 +1,41 @@
+body {
+    /*
+        this sets the font and the background for the entire page.
+    */ 
+    /*make the nave and the name a little bigger*/
+    margin: 0;
+    background: url("./Pictures/background (2).jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 110%;  
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /*How you push the content to opposite ends*/
+    align-items: center; /*Alignment up and down*/
+    background-color: #ffffff; /*Sets the background color of the header*/
+    color: black; /*Makes the text white*/
+}
+
+header nav a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+    color: black; /*Sets the text color*/
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px; /*Puts a space all around*/
+}
+
+header nav a:hover {
+    transform: scale(1.2);
+}
+
+header .title {
+    max-width: 110%;
+    font-size: 2.5rem; /*Makes the font 150% bigger than normal*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic; /*Italicises the font*/
+    font-weight: bold; /*Makes the font bold*/
+    padding: 25px; /*Puts a space all around*/
+}
