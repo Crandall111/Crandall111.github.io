@@ -20,7 +20,7 @@
     max-width: 500px; /*width can be any size besides greater than 500*/
     margin: auto; /*sets the margin evenly on both sides*/
     font-size: 1.5rem; /*Size of the for 16px*/
-    color: white;
+    color: white; /* color of the font */
 }
 
 .grid {
@@ -35,14 +35,14 @@
     border-radius: 15px; /*creates the round edges*/
     box-shadow: 0 6px 18px; /*creates the shadow*/
     p {
-        text-align: justify;
-        font-size: 1.3rem;
+        text-align: justify; /*so the edges line up evenly*/
+        font-size: 1.3rem; /*size of the text*/
     }
 }
 
 .card h3 {
     color: black; /*makes the text black*/
-    margin-top: 10px;
+    margin-top: 10px; /*creates the gap at the top*/
     margin-bottom: 10px; /*creates a 10px gap at the bottom*/
     font-size: 2rem; /*Size of the for 24px*/
 }
@@ -72,7 +72,10 @@
 .text p {
     font-size: 1.3rem; /*Size of the for 16px*/
 }
-
+/*
+The below text will adjust the page 
+for when the screen size is below 450px
+*/
 @media (max-width: 450px){
 
     header {

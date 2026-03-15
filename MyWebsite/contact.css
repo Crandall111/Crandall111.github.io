@@ -35,6 +35,10 @@ button:hover {
     background: red; /*glows white when you hover over it*/
 }
 
+/*
+The below text will adjust the page 
+for when the screen size is below 450px
+*/
 @media (max-width: 450px){
 
     header {

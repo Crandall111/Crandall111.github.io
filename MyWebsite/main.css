@@ -24,6 +24,11 @@
     box-shadow: 0 6px 18px; /*creates the shadow*/
 }
 
+/*
+The below text will adjust the page 
+for when the screen size is below 450px
+*/
+
 @media (max-width: 450px){
 
     header {

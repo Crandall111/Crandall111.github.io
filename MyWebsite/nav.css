@@ -1,3 +1,6 @@
+/*
+This is the CSS page for the navigation bar 
+*/
 body {
     /*
         this sets the font and the background for the entire page.
@@ -28,12 +31,12 @@ header nav a {
 }
 
 header nav a:hover {
-    transform: scale(1.2);
+    transform: scale(1.2); /* allows the text to blow up a bit when you hover over it*/
 }
 
 header .title {
-    max-width: 110%;
-    font-size: 2.5rem; /*Makes the font 150% bigger than normal*/
+    max-width: 110%; /* makes sure it takes up the entire screen*/
+    font-size: 2.5rem; /* increase the size of the font*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic; /*Italicises the font*/
     font-weight: bold; /*Makes the font bold*/
