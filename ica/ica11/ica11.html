@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        /*
+        this sets the font and the background for the entire page.
+        */ 
+        /*make the nave and the name a little bigger*/
+        margin: 0;
+        background: url("background (2).jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        max-height: 110%;  
+        color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="custom-name">Enter custom name:</label>
+        <input id="custom-name" type="text" placeholder="" />
+    </div>
+    <fieldset>
+        <legend>Choose locale:</legend>
+        <label for="us">US</label><input id="us" type="radio" name="uk-us" value="us" checked />
+        <label for="uk">UK</label><input id="uk" type="radio" name="uk-us" value="uk" />
+    </fieldset>
+    <div>
+        <button class="generate">Generate random story</button>
+    </div>
+    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <p class="story"></p>
+    <script>
+    // Complete variable definitions and random functions
+
+        const customName = document.getElementById("custom-name");
+        const generateBtn = document.querySelector(".generate");
+        const story = document.querySelector(".story");
+
+        function randomValueFromArray(array) {
+            const random = Math.floor(Math.random() * array.length);
+            return array[random];
+        }
+
+        // Raw text strings
+
+        let characters = ["Harry Plopper",
+                        "John McDonald",
+                        "Kylie Reynolds"];
+
+        let places = ["Pizza Hut",
+                     "Tokyo",
+                     "Africa"]; 
+
+        let events = ["a competitive snail racing championship",
+                     "a synchronized shopping cart ballet",
+                     "a dramatic reading of cereal box ingredients"];
+
+        // Partial return random string function
+
+        function returnRandomStoryString() {
+            const random_character = randomValueFromArray(characters);
+            const random_place = randomValueFromArray(places); 
+            const random_event = randomValueFromArray(events); 
+
+            let storyText = `It was 94 Fahrenheit outside, so 
+                ${random_character} decided it was the perfect day to fight a squirrel.
+                When they arrived at ${random_place}, they immediately slipped on a mysterious banana peel and landed in front of  
+                ${random_event}. Everyone gasped as ${random_character} stood up, dramatically pointed at nothing, and yelled, "THIS WAS PART OF THE PLAN!"
+                A nearby pigeon nodded in approval. Bob watched the whole thing, unimpressed — mostly because ${random_character} still weighs 300 pounds and somehow blamed gravity.`;
+            return storyText;
+        }
+
+        // Event listener and partial generate function definition
+
+        generateBtn.addEventListener("click", generateStory);
+
+        function generateStory() {
+            let newStory = returnRandomStoryString();
+
+            if (customName.value !== "") {
+                const name = customName.value;
+                newStory = newStory.replace("Bob", name);
+            }
+
+            if (document.getElementById("uk").checked) {
+                const weight = `${Math.round(300 / 14)} stone`;
+                const temperature = `${Math.round((94 - 32) * (5 / 9))} Celsius`;
+
+                newStory = newStory.replace("300 pounds", weight);
+                newStory = newStory.replace("94 Fahrenheit", temperature);
+            }
+
+            // TODO: replace "" with the correct expression
+            story.textContent = newStory;
+            story.style.visibility = "visible";
+        }
+    </script>
+</body>
+</html>
