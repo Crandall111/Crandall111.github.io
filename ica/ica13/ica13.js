@@ -78,14 +78,14 @@ class Ball {
             const distance = Math.sqrt(dx * dx + dy * dy);
 
             if (distance < this.size + ball.size){
-                const tempVelx = this.velX;
-                const tempVely = this.velY;
+                const temp_movex = this.move_x;
+                const temp_movey = this.move_y;
                 
-                this.velX = ball.velX;
-                this.velY = ball.velY;
+                this.move_x = ball.move_x;
+                this.move_y = ball.move_y;
 
-                ball.velX = tempVelx;
-                ball.velY = tempVely;
+                ball.move_x = temp_movex;
+                ball.move_y = temp_movey;
 
                 this.color = ball.color = randomRGB();
             }
