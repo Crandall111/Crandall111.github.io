@@ -1,0 +1,67 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.volume_button {
+    padding: 16px;
+    font-size: 1rem;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+.set_volume {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.submit_button,
+.reset_button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.submit_button {
+    background: green;
+    color: black;
+}
+
+.reset_button {
+    background: red;
+    color: black;
+}
+
+.message {
+    margin-top: 18px;
+    padding: 14px;
+    border-radius: 10px;
+    background: black;  
+    color: white; 
+}
+
+.volume_button.correct {
+    background-color: green;
+    color: white;
+}
+
+.volume_button.wrong {
+    background-color: red;
+    color: white;
+}
+
+.end_button {
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+}
+
