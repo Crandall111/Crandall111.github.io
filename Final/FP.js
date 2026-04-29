@@ -49,7 +49,6 @@ function handleButtonClick(event) {
     const clickedIndex = Number(clickedButton.dataset.index); 
 
     clickedButton.classList.remove("wrong", "correct");
-    void clickedButton.offsetWidth;
 
     if (clickedIndex === realButtonIndex) {
         clickedButton.classList.add("correct");
