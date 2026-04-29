@@ -2,7 +2,7 @@ const grid = document.getElementById("grid"); // searches the HTML doc for the i
 const currentVolumeText = document.getElementById("current_volume");
 const desiredVolumeInput = document.getElementById("desired_volume");
 const message = document.getElementById("message");
-const submitButton = document.getElementById("submit_button");
+//const submitButton = document.getElementById("submit_button");
 const resetButton = document.getElementById("reset_button");
 
 const total_buttons = 25;
@@ -70,38 +70,41 @@ function handleButtonClick(event) {
     } else {
         clickedButton.classList.add("wrong");
         message.textContent = "Wrong button.";
-        window.alert("Wrong button");
+        //window.alert("Wrong button");
     }
 
 }
 
 // handles the user input on the requested volume.
-function handleSubmit() {
-    const desiredValue = Number(desiredVolumeInput.value);
+// function handleSubmit() {
+//     const desiredValue = Number(desiredVolumeInput.value);
 
-    if (desiredValue < 0 || desiredValue > 100) {
-        message.textContent = "Please enter a number between o and 100.";
-        return;
-    }
+//     if (desiredValue < 0 || desiredValue > 100) {
+//         message.textContent = "Please enter a number between o and 100.";
+//         return;
+//     }
 
-    hiddenVolume = desiredValue;
-    updateVolumeDisplay();
+//     hiddenVolume = desiredValue;
+//     updateVolumeDisplay();
 
-    message.textContent = `The volume has been updated to ${hiddenVolume}.`;
-}
+//     message.textContent = `The volume has been updated to ${hiddenVolume}.`;
+// }
 
 // when the user hits reset it will set everything back to 0.
 function resetGrid() {
     hiddenVolume = 0;
     realButtonIndex = randomIndex();
-    desiredVolumeInput.value = "";
+    if (desiredVolumeInput){
+        desiredVolumeInput.value = "";
+    }
+    
     message.textContent = "Try to find the real volume button.";
     updateVolumeDisplay()
     build_grid();
 }
 
 resetButton.addEventListener("click", resetGrid);
-submitButton.addEventListener("click", handleSubmit);
+//submitButton.addEventListener("click", handleSubmit);
 
 updateVolumeDisplay();
 build_grid();
